@@ -5,7 +5,8 @@ const fs = require('fs')
 const router = express.Router()
 
 router.get('/', (req, res) => {
-    res.render('home');
+    var content = fs.readFileSync('views/markdown/home.md', 'utf-8')
+    res.render('home', {content: marked(content)});
 })
 
 router.get('/project', (req, res) => {
@@ -13,9 +14,9 @@ router.get('/project', (req, res) => {
     res.render('project', {content: marked(content)})
 })
 
-
 router.get('/contact', (req, res) => {
-    res.send('under construct')
+    var content = fs.readFileSync('views/markdown/content.md', 'utf-8')
+    res.render('content', {content: marked(content)})
 })
 
 module.exports = router
