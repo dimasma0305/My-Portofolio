@@ -1,0 +1,26 @@
+{
+  "name": "my-portofolio",
+  "version": "1.0.0",
+  "description": "https://github.com/Surajv311/myBlog/blob/master/app.js",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "marked": "^4.1.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimasma0305/My-Portofolio.git"
+  },
+  "author": "Dimas Maulana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimasma0305/My-Portofolio/issues"
+  },
+  "homepage": "https://github.com/dimasma0305/My-Portofolio#readme"
+}
