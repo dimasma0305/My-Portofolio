@@ -15,8 +15,8 @@ router.get('/project', (req, res) => {
 })
 
 router.get('/contact', (req, res) => {
-    var content = fs.readFileSync('views/markdown/content.md', 'utf-8')
-    res.render('content', {content: marked(content)})
+    var content = fs.readFileSync('views/markdown/contact.md', 'utf-8')
+    res.render('contact', {content: marked(content)})
 })
 
 module.exports = router
